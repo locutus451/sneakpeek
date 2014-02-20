@@ -1,0 +1,57 @@
+div.body { 
+	font-weight: bold;
+	font-name: arial;
+	font-color: gold; 
+	color: white;
+}
+
+a.link {
+	color:gold;
+	text-decoration:none;
+	font-family:Verdana, Times, sans-serif;
+ }
+div.center {
+	float: right;
+	color: #000000;
+	font-family: "Comic Sans Serif ", Gadget, sans-serif;
+	background: white;
+	width: 563px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+div.wrapper {
+	width: 780px;
+}
+div.leftnav {
+	float: left;
+	width: 190px;
+}
+div.clear{
+	clear: both;
+}
+input.btn {
+	color:#050;
+	font: bold 84%, 'trebuchet ms',helvetica, sans-serif;
+	background-color:#fed;
+	border:1px solid;
+	border-color: #696 #363 #363 #696;
+	filter:progid:DXImageTransform.Microsoft.Gradient
+	(GradientType=0,StartColorStr='#ffffffff',EndColorStr='#ffeeddaa');
+}
+div.registration {
+	font-family: "Courier New", Courier, monospace;
+}
+
+div.edit_wrapper {
+	width: 780px;
+}
+
+div.edit {
+	float: right;
+	color: #000000;
+	font-family: "Comic Sans Serif ", Gadget, sans-serif;
+	background: white;
+	width:  2000px;
+	padding-left: 10px;
+	padding-right: 300px;
+}
