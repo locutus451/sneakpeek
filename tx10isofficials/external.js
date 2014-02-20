@@ -54,3 +54,13 @@ function forValidation() {
 
         return false;
 }
+
+function notEmpty(elem, helperMsg){
+
+        if(elem.value.length == 0){
+                alert(helperMsg);
+                elem.focus();
+                return false;
+        }
+        document.violation.submit.submit();
+}
