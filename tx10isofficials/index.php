@@ -1,4 +1,3 @@
-<html>
 <?php
 include 'header.html';
 include 'ext_functions.php';
