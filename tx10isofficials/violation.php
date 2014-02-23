@@ -1,4 +1,3 @@
-
 <?php
 include 'header.html';
 ?>
@@ -9,9 +8,7 @@ include 'header.html';
 	?>
                 <div class="center">
 		<br>
-		<form name="violation" 
-#			onclick='return formValidation()'
-			action="report_violation.php" method="POST"> 
+		<form name="violation" action="report_violation.php" method="POST"> 
 		Code Violation Report<br><br>
 		<font face="courier new">
 		Referee Email: &nbsp&nbsp&nbsp<input type="text" name="ref_email" /><br><br>
