@@ -96,6 +96,7 @@ $(document).ready(function () {
 function formValidation() {
         var ref_email = $('input[name="ref_email"]');
 	var tournament = $('input[name="tournament"]');
+        var tcity = $('input[name="tcity"]');
 	var tid = $('input[name="tid"]');
 	var site = $('input[name="site"]');
 	var oname = $('input[name="name"]');
@@ -110,11 +111,12 @@ function formValidation() {
         var code = $('input[name="code"]');
 	var penalty = $('input[name="penalty"]');
 	var court = $('input[name="court"]');
-	var description = $('input[name="description"]');
+	var description = $('textarea[name="description"]');
 
         if(notEmpty(ref_email, "Please enter the referee's email address")){
           if(notEmpty(tournament, "Please enter the tournament name")){
             if(notEmpty(tid,"Please enter the tournament id")){
+             if(notEmpty(tcity,"Please enter the tournament city")){
              if(notEmpty(site,"Please enter the site name")){
                if(notEmpty(oname,"Please enter your name")){
                  if(notEmpty(email,"Please enter your email address")){
@@ -122,13 +124,13 @@ function formValidation() {
                      if(notEmpty(odate,"Please enter the date of the offense")){
                        if(notEmpty(time,"Please enter the time of the offense")){
                          if(notEmpty(player,"Please enter the name of the player committing the offense")){
-                           if(notEmpty(opponent,"Please enter the name of the opposing plaer")){
+                           if(notEmpty(opponent,"Please enter the name of the opposing player")){
                              if(notEmpty(division,"Please enter the division")){
                                if(notEmpty(code,"Please enter the code violation")){
                                  if(notEmpty(penalty,"Please enter the penalty")){
                                    if(notEmpty(court,"Please enter the court number")){
                                      if(notEmpty(description,"Please enter the description of the offense")){
-					$('input[name="violation"]').submit();
+					document.forms[0].submit();
                                        return true;{
                                      }
                                    }
@@ -143,6 +145,7 @@ function formValidation() {
                  }
                }
              }
+             }
             }
           }
         }
@@ -151,7 +154,7 @@ function formValidation() {
 }
 
 function notEmpty(elem, helperMsg){
-console.log("name: " +elem.attr('name'));
+//console.log("name: " +elem.attr('name'));
         if(elem.val().length < 0 || elem.val() == null || elem.val() == ''){
                 alert(helperMsg);
                 return false;
