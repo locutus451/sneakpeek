@@ -1,9 +1,8 @@
 <?php
-function dbconnection()	
-{
-	mysql_connect("localhost", "root", "sql4root") or die(mysql_error());
-	mysql_select_db("tx10isofficials") or die(mysql_error());
-}
+$username=root;
+$password=sql4root;
+$dbname=tx10isofficials;
+
 
 function emailer($to_email,$from_email,$message,$subject,$reply)	
 {
