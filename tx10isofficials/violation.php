@@ -28,7 +28,7 @@ include 'header.html';
 		Penalty:        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="text" name="penalty" /><br><br>
 		Court #:        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="text" name="court" /><br><br>
      		<br><b>Description:</b><br>
-     		<textarea cols=40 rows=10 name="description"></textarea>
+     		<textarea cols=40 rows=10 name="description"></textarea><br>
      		<input type= "button" 
                      onclick='return formValidation()'
                      value="Submit">
