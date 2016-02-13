@@ -1,0 +1,25 @@
+<html>        
+<head>  
+                <title>Texas Tennis Officials Class Registration</title>
+                <link rel="shortcut icon" type="image/png" href="tennisball.png">
+                <link REL="StyleSheet" TYPE="text/css" HREF="external.css">
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script src="js/site.js" type="text/javascript"></script>
+</head>
+                <div style="background: white">
+                        <img src="/pictures/logo1.jpg" />
+                </div>  
+        <body bgcolor="white">
+<br>
+                <div class="body">
+                        <a class="link" href="index.php">Register</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="link"href="c
+ontactus.php">Contact Us</a>&nbsp;&nbsp|&nbsp;&nbsp;
+<font color="gold"> 
+<?php
+$today = getdate();
+$showdate = "$today[weekday]" . " " . "$today[month]" . " " . "$today[mday]" . ", " . "$today[year]";
+echo $showdate;
+?>
+</font>
+                </div>  
+
