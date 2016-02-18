@@ -17,12 +17,13 @@ include 'header.html';
 		First Name<font color=red>*</font>: <input type="text" name="first" /><br><br>
 		Last Name<font color=red>*</font>: &nbsp<input type="text" name="last" /><br><br>
 		Email<font color=red>*</font>:      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="text" name="email" /><br><br>
-		Phone:      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="text" name="phone" /><br><br>
-		Address:    &nbsp;&nbsp;&nbsp<input type="text" name="street1" /><br><br>
-		Line 2:     &nbsp;&nbsp;&nbsp;&nbsp<input type="text" name="street2" /><br><br>
+		Phone:       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="text" name="phone" /><br><br>
+		Address:     &nbsp;&nbsp;&nbsp;&nbsp<input type="text" name="street1" /><br><br>
+		Line 2:      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="text" name="street2" /><br><br>
 		City<font color=red>*</font>:       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="text" name="city" /><br><br>
 		State<font color=red>*</font>:      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="text" name="state" maxlength=2 /><br><br>
 		Zip<font color=red>*</font>:        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="text" name="zip" /><br><br>
+		<font color=red>*</font>required fields
 		</font>
 		<font name="verdana">
 		<input type=submit value="Register"/>
