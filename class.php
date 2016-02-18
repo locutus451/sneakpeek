@@ -23,7 +23,7 @@ include 'header.html';
 		City<font color=red>*</font>:       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="text" name="city" /><br><br>
 		State<font color=red>*</font>:      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="text" name="state" maxlength=2 /><br><br>
 		Zip<font color=red>*</font>:        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<input type="text" name="zip" /><br><br>
-		<font color=red>*</font>required fields
+		<font color=red>*</font>required fields<br><br>
 		</font>
 		<font name="verdana">
 		<input type=submit value="Register"/>
