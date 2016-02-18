@@ -10,7 +10,7 @@ include 'header.html';
                 <div class="center">
 		<br>
 		<form name="register" action="register.php" method="post"> 
-		Create your sneakpeek profile<br><br>
+		Create your sneek-peek profile<br><br>
 		<font face="courier new">
 		Username<font color=red>*</font>: &nbsp&nbsp<input type="text" name="username" /><br><br>
 		Password<font color=red>*</font>: &nbsp&nbsp<input type="text" name="password" /><br><br>
