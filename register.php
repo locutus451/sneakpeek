@@ -10,22 +10,30 @@ include 'header.html';
         <div class="center">
 		<?php
 			include 'ext_functions.php';
-			$coordinator = "mikeflynn4@gmail.com";
 			$state = strtoupper($_POST[state]);
 			$first = ucwords($_POST[first_name]);
 			$last = ucwords($_POST[last_name]);
 			$street1 = ucwords($_POST[street1]);
 			$street2 = ucwords($_POST[street2]);
 			$city = ucwords($_POST[city]);
+			$zip = $_POST[zip];
 
-			mysql_connect("localhost", "root", "sql4root") or die(mysql_error());
-			mysql_select_db("tx10isofficials") or die(mysql_error());
-			$result = mysql_query("Insert into class values(null,'$first','$last','$street1','$street2','$city',upper('$_POST[state]'),'$_POST[zip]','$_POST[phone]'");
+			mysql_connect("localhost", "root", "sql4r00t") or die(mysql_error());
+			mysql_select_db("sneekpeek") or die(mysql_error());
+			login_insert="insert into login values(null,'$username','$password')";
+			get_login="select login_id from login where username='$username'";
+			address_insert="insert into address values(null,'$street1','$street2','$city','$state','$zip')";
+			get_address="select address_id from address where street1 = '$street1', street2 = '$street2',' city='$city',state='state',zip='$zip'";
+			user_profile="Insert into user_profile values(null,'$first','$last','$date_of_birth','$get_address','$_POST[phone]','$get_login'"
+			$result=mysql_query($login_insert);
+			$result=mysql_query($get_login);
+			$result=mysql_query($address_insert);
+			$result=mysql_query($get_address);
+			$result=mysql_query($user_profile);
 			}
 
 		?>		
 		<br>
-
 			<?php
 				$newdate = date('F d, Y', strtotime($_POST['date_dropdown']));
 				$to_email = $_POST['email'];
